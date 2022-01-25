@@ -1,0 +1,20 @@
+{
+  "name": "file_upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "upload",
+    "archives",
+    "files"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "multer": "^1.4.4"
+  }
+}
