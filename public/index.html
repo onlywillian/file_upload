@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>File Upload</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action="POST" enctype="multipart/form-data">
-        
-    </form>
+    <div class="main-content">
+        <h2>Upload your files</h2>
+        <small>In JPEG, ZIP or PDF</small>
+
+        <form action="/files/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file-upload">
+            <label for="file-upload" accept=".jpeg,.pdf,.zip">Click to Upload</label>
+        </form>
+
+        <div class="upload-file-block">
+            <div class="file-type"></div>
+            <div class="file-name">Screenshot_25157631327.jpeg</div>
+            <div class="file-size">875KB</div>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
