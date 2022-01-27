@@ -2,24 +2,20 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>File Upload</title>
+    <title>Image Upload</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="main-content">
-        <h2>Upload your files</h2>
-        <small>In JPEG, ZIP or PDF</small>
+        <h2>Upload your images</h2>
+        <small>In JPEG or PNG</small>
 
         <form action="/files/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" id="file-upload">
-            <label for="file-upload" accept=".jpeg,.pdf,.zip">Click to Upload</label>
+            <input type="file" name="recfile" id="file-upload" accept="image/*" multiple>
+            <label for="file-upload">Click to Upload</label>
         </form>
-
-        <div class="upload-file-block">
-            <div class="file-type"></div>
-            <div class="file-name">Screenshot_25157631327.jpeg</div>
-            <div class="file-size">875KB</div>
-        </div>
     </div>
 
     <script src="./scripts/script.js"></script>
