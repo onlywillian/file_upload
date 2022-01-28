@@ -29,25 +29,12 @@ function handleSubmit(e) {
         size.textContent = parseInt(files[i].size / 1024) + ' KB';
         div.append(size);
 
-        console.log(JSON.stringify(files[0]));
-
-        fetch('http://localhost:3000/files/upload', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                'X-Powered-By': 'Express',
-            },
-            body: JSON.stringify(files),
-        }).then(res => res.json())
-          .then(res => console.log(res));
+        form.submit();
     }
 }
 
 form.addEventListener('submit', e => { 
     e.preventDefault();
-
-    // sending file data
 });
 
 input.addEventListener('change', e => handleSubmit(e));
